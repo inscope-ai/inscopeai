@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = {
-  pathPrefix: `/site_build`,
+  pathPrefix: `/`,
   siteMetadata: {
     title: `Inscope.ai`,
     description: `Close Faster With Human Centered AI`,
