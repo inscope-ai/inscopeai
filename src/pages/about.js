@@ -8,26 +8,26 @@ import aboutContent from "../content/about";
 import styles from "../components/layout/layout.module.scss";
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulTeamMember {
-        edges {
-          node {
-            name
-            linkedIn
-            title
-            image {
-              fluid {
-                src
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allContentfulTeamMember {
+  //       edges {
+  //         node {
+  //           name
+  //           linkedIn
+  //           title
+  //           image {
+  //             fluid {
+  //               src
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
-  const teamMembers = data.allContentfulTeamMember.edges;
+  // const teamMembers = data.allContentfulTeamMember.edges;
 
   return (
     <Layout>
@@ -50,7 +50,8 @@ const About = () => {
     <section className={styles.teamSection}>
       <h2>{aboutContent.teamContent.header}</h2>
       <div className={styles.teamContainer}>
-        {teamMembers.map((props, index) => {
+        {/* {teamMembers.map((props, index) => { */}
+        {aboutContent.teamContent.teamMembers.map((props, index) => {
           return (
             <Thumbnail key={index} {...props}></Thumbnail>
           )
