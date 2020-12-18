@@ -56,7 +56,7 @@ const aboutContent = {
     ],
     teamContent: {
         header: "Our Team",
-        teamMemebers: [
+        teamMembers: [
             {
                 imgComponent: MichaelSkinnerImage,
                 name: "Michael Skinner",
