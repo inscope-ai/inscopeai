@@ -57,6 +57,21 @@ const aboutContent = {
     teamContent: {
         header: "Our Team",
         teamMembers: [
+            
+             {
+                imgComponent: EliotSkinnerImage,
+                name: "Eliot Skinner",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/eskinnermusic/",
+                    },
+                ],
+            },
             {
                 imgComponent: MichaelSkinnerImage,
                 name: "Michael Skinner",
@@ -71,20 +86,7 @@ const aboutContent = {
                     },
                 ],
             },
-            {
-                imgComponent: EliotSkinnerImage,
-                name: "Eliot Skinner",
-                titles: [
-                    "Founding Partner", 
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/eskinnermusic/",
-                    },
-                ],
-            },
+           
             {
                 imgComponent: BuryHuangImage,
                 name: "Bury Huang",
